@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Cute;
+    src: url(adorableFont.woff);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.point{
+    display: flex;
+    font-family: Cute;
+    font-size: 35px;
+    margin-left: 230px;
+    margin-right: 230px;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+}
+
+#scoreboard{
+    margin-top: 10%;
+    margin-bottom: 0.5%;
+    display: flex;
+    justify-content: center;
+}
+
+#GameWindow{
+    display: flex;
+    justify-content: center;
+}
+
+#postButton{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 200px;
+    height: 50px;
+    background-color: #50d7d7;
+    color: black;
+    border-radius: 10px;
+    font-family: Cute;
+    font-size: 30px;
+
+}
+
+#sellCrops{
+    position: absolute;
+    width: 620px;
+    height: 50px;
+    margin-left: 5px;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    font-family: Cute;
+    font-size: 30px;
+    left: 32%;
+}
+
+#dirt1{
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    top: 59%;
+    left: 38%
+}
+
+#dirt2{
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    top: 65%;
+    left: 58%
+}
+
+#dirt3{
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    top: 60%;
+    left: 52%
+}
+
+#dirt4{
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    top: 63%;
+    left: 45%
+}
+
+#dirt5{
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    top: 65%;
+    left: 33%
+}
+
+#plant1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 56.5%;
+    left: 58.5%
+}
+
+#plant2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 38.5%
+}
+
+#plant3{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 51%;
+    left: 52.5%
+}
+
+#plant4{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 54%;
+    left: 45.5%
+}
+
+#plant5{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 56.5%;
+    left: 33.5%
+}

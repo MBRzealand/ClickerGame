@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Click Counter</title>
+    <link rel="stylesheet" href="http://localhost:3000/css">
+    <script type="text/javascript" src="http://localhost:3000/script"></script>
+</head>
+<body>
+
+
+        <div id="scoreboard">
+
+            <div class="point">
+                <p id = "tomatoCounter">0</p>
+                <img class = "icon" src="Tomato.png">
+            </div>
+
+            <div class="point">
+                <p id = "moneyCounter">0</p>
+                <img class = "icon" src="money.png">
+            </div>
+        </div>
+        
+        <div id="GameWindow">
+            <img alt="Avatar" style="border-radius: 6%" src="garden.jpg">
+            <img id = "dirt1" src="dirtPatch.png">
+            <img id = "dirt2" src="dirtPatch.png">
+            <img id = "dirt3" src="dirtPatch.png">
+            <img id = "dirt4" src="dirtPatch.png">
+            <img id = "dirt5" src="dirtPatch.png">
+            <img id = "plant1" onclick="harvestPlant1()" src="TomatoPlant.png">
+            <img id = "plant2" onclick="harvestPlant2()" src="TomatoPlant.png">
+            <img id = "plant3" onclick="harvestPlant3()" src="TomatoPlant.png">
+            <img id = "plant4" onclick="harvestPlant4()" src="TomatoPlant.png">
+            <img id = "plant5" onclick="harvestPlant5()" src="TomatoPlant.png">
+        </div>
+
+        <button id = "sellCrops" onclick="sellCrops()">Sell Crops</button>
+
+        <button id="postButton" onclick="postRequest()">Post Request</button>
+
+</body>
+</html>
