@@ -85,9 +85,15 @@ async function postRequest() {
         "money": document.getElementById("moneyCounter").innerText
     }
 
-    const http = new XMLHttpRequest()
-    http.open('POST', '/score')
-    http.setRequestHeader('Content-type', 'application/json')
-    http.send(JSON.stringify(data))
+    // const http = new XMLHttpRequest()
+    // http.open('POST', '/score')
+    // http.setRequestHeader('Content-type', 'application/json')
+    // http.send(JSON.stringify(data))
+
+    let postRequest = await fetch("/score", {
+        method: 'POST',
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+    });
 
 }

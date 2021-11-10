@@ -1,3 +1,4 @@
+require('dotenv').config({path:"./.env"})
 const express = require("express");
 const mongoose = require("mongoose");
 const scoreRouter = require("./routes/scoreRoutes.js");
@@ -20,10 +21,10 @@ app.use(express.static('C:\\Users\\mikma\\ClickerGame\\.idea\\game'))
 app.use(express.json());
 
 mongoose.connect(
-    "mongodb+srv://TallBoye:cxCTHgOWfzK5Su55@tallboye.mtrsh.mongodb.net/Tallboye?retryWrites=true&w=majority",
+    process.env.DB_URL
+    ,
     {
         useNewUrlParser: true,
-        useFindAndModify: false,
         useUnifiedTopology: true
     }
 );
