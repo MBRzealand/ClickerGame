@@ -1,7 +1,7 @@
 # ClickerGame
 
 ### Gameplay:
-A tomato plant will pop up every half second, if you manage to click it you get a random amount of tomatoes between 1 and 7, you can then sell the tomatoes for money:
+A random plant will pop up every half second, if you manage to click it you get a random amount of the corresponding vegetable, you can then sell the vegetables for money:
 
 ![image](https://user-images.githubusercontent.com/70659124/141474880-4f32e089-e221-4940-80e7-d6ac06c65ea6.png)
 
