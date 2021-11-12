@@ -17,6 +17,10 @@ const ScoreSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
+    broccoli: {
+        type: Number,
+        required: true,
+    },
     money: {
         type: Number,
         required: true,
