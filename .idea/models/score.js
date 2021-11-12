@@ -5,6 +5,14 @@ const ScoreSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
+    peppers: {
+        type: Number,
+        required: true,
+    },
+    carrots: {
+        type: Number,
+        required: true,
+    },
     money: {
         type: Number,
         required: true,

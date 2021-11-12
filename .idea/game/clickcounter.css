@@ -12,8 +12,10 @@
     display: flex;
     font-family: Cute;
     font-size: 35px;
-    margin-left: 230px;
-    margin-right: 230px;
+}
+
+#moneyCounter{
+    margin-left: 380px;
 }
 
 .icon{
