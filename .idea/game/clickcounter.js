@@ -49,9 +49,9 @@ function displayPlant(){
 
     setInterval(function(){
 
-        let plantArray = ["TomatoPlant.png","BellPepperPlant.png","CarrotPlant.png"]
-        let iconArray = ["tomatoCounter", "pepperCounter", "carrotCounter"]
-        let pickPlantType = Math.floor(Math.random()*3)
+        let plantArray = ["TomatoPlant.png","BellPepperPlant.png","CarrotPlant.png", "PotatoPlant.png"]
+        let iconArray = ["tomatoCounter", "pepperCounter", "carrotCounter", "potatoCounter"]
+        let pickPlantType = Math.floor(Math.random()*4)
         let pickDisplay = Math.floor(Math.random()*5) + 1
         let plantdisplay = "plant"+pickDisplay;
 
@@ -91,6 +91,13 @@ function clickPlant(){
         let currentCount = document.getElementById("carrotCounter").innerText;
         document.getElementById("carrotCounter").innerHTML = eval(currentCount) + harvestAmount;
     }
+
+    if (currentImage.includes("Potato")){
+        document.getElementById(this.id).style.visibility = "hidden"
+        let harvestAmount = 1;
+        let currentCount = document.getElementById("potatoCounter").innerText;
+        document.getElementById("potatoCounter").innerHTML = eval(currentCount) + harvestAmount;
+    }
 }
 
 async function postRequest() {
@@ -99,6 +106,7 @@ async function postRequest() {
         "tomatoes": document.getElementById("tomatoCounter").innerText,
         "peppers": document.getElementById("pepperCounter").innerText,
         "carrots": document.getElementById("carrotCounter").innerText,
+        "potatos": document.getElementById("potatoCounter").innerText,
         "money": document.getElementById("moneyCounter").innerText
     }
 

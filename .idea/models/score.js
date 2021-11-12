@@ -13,6 +13,10 @@ const ScoreSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
+    potatos: {
+        type: Number,
+        required: true,
+    },
     money: {
         type: Number,
         required: true,
